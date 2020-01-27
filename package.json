@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
-  "main": "index.js",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "linkedin-scraper2": "^2.0.0",
-    "parse-domain": "^0.2.1"
-  }
+    "parse-domain": "^0.2.1",
+    "snyk": "^1.283.0"
+  },
+  "snyk": true
 }
