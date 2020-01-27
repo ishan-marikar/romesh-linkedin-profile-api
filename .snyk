@@ -1,0 +1,8 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:tough-cookie:20160722':
+    - linkedin-scraper2 > jsdom > tough-cookie:
+        patched: '2020-01-27T23:14:46.971Z'
